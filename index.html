@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva - Psicología</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    h1 { color: #333; }
+    .semestre { margin-bottom: 30px; }
+    .ramo {
+      padding: 10px;
+      margin: 5px 0;
+      background: #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .aprobado { background: lightgreen !important; text-decoration: line-through; }
+  </style>
+</head>
+<body>
+  <h1>Malla de Psicología</h1>
+
+  <div class="semestre">
+    <h3>Primer Semestre</h3>
+    <div class="ramo">Psicología General</div>
+    <div class="ramo">Biología</div>
+    <div class="ramo">Filosofía</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Segundo Semestre</h3>
+    <div class="ramo">Psicología del Desarrollo</div>
+    <div class="ramo">Neurociencia</div>
+    <div class="ramo">Estadística</div>
+  </div>
+
+  <script>
+    const ramos = document.querySelectorAll('.ramo');
+    ramos.forEach(ramo => {
+      ramo.addEventListener('click', () => {
+        ramo.classList.toggle('aprobado');
+      });
+    });
+  </script>
+</body>
+</html>
