@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Malla Interactiva - Psicología</title>
   <style>
-    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
-    h1 { color: #333; }
-    .semestre { margin-bottom: 30px; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    .semestre {
+      margin-bottom: 30px;
+    }
     .ramo {
       padding: 10px;
       margin: 5px 0;
       background: #ddd;
       border-radius: 5px;
       cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
     }
-    .aprobado { background: lightgreen !important; text-decoration: line-through; }
+    .ramo:hover {
+      background-color: #ccc;
+    }
+    .aprobado {
+      background-color: lightgreen !important;
+      text-decoration: line-through;
+      color: #555;
+    }
   </style>
 </head>
 <body>
